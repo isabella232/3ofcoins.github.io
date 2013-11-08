@@ -9,8 +9,22 @@
     <meta name="generator" content="nanoc <%= Nanoc::VERSION %>">
   </head>
   <body>
-    <div id="main">
+    <section>
+      <header id="main">
+        <h1>Three of Coins</h1>
+      </header>
       <%= yield %>
-    </div>
+    </section>
+      <nav>
+        <ul>
+          <li><a href="/projects/" class="nav">Projects</a></li>
+          <li><a href="/" class="nav">Home</a></li>
+        </ul>
+        <img src="/logo-github.png">
+        <img src="/logo-twitter.png">
+      </nav>
+    <footer>
+      <h1>There's a footer too!</h1>
+    </footer>
   </body>
 </html>
