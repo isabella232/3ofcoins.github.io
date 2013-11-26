@@ -1,7 +1,18 @@
+/** Global **/
+
+body, section, article, h1, h2, h3, h4, h5, h6, p, a, footer, #main, #main-logo, aside, #main_to_aside, #above_footer, nav, ul, ol, nav ul, li {
+  font-family: "Warnock Pro", "Goudy Old Style", "Palatino", "Book Antiqua", Georgia, serif;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 105%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
 body {
   background: rgb(144, 96, 24);
   line-height: 1.5;
-  font-family: "Warnock Pro", "Goudy Old Style","Palatino","Book Antiqua", Georgia, serif;
+  font-size: 112.5%;
 }
 
 section {
@@ -9,71 +20,54 @@ section {
   width: 1000px;
   background: url(/bg_main.png) repeat-y center top;
   margin: 0px auto 0px;
-  padding: 0px 15px;
+  padding: 0px 1em;
 }
 
 article {
   padding: 10px;
 }
 
-nav {
-  padding: 0.75em;
-  border-radius: 1.5em 1.5em 1.5em 1.5em;
-  background: rgb(191, 191, 115);
-  float: right;
-  margin: 1.5em 3em 1.5em 1.5em;
-}
+/** Text **/
 
-p {
-  margin: 0px 0px 1.5em;
-  padding-left: 2em;
-  padding-right: 2em;
-  color: rgb(34, 34, 34);
-  line-height: 22px;
-  font-size: 100%;
-  vertical-align: baseline;
-}
+/* Headings */
 
 h1, h2, h3, h4, h5, h6 {
-  padding-left: 1em;
-  padding-right: 2em;
+  color: rgb(34, 34, 34);
   font-weight: normal;
   line-height: 40px;
   letter-spacing: -1px;
-  color: rgb(34, 34, 34);
+  padding-left: 1em;
+  padding-right: 2em;
+  margin-bottom: 1em;
 }
 
-h1 {
+h1, h2 {
   font-size: 2em;
 }
 
 h2 {
-  font-family: Cambria, Georgia, serif;
-  font-size: 2em;
   margin-bottom: 0.75em;
 }
 
-ul, ol {
-  margin: 20px;
-}
+/** Paragraphs, links **/
 
-li {
-  margin: 0px 0px 1.5em;
-  padding-left: 0em;
-  padding-right: 0em;
+p {
   color: rgb(34, 34, 34);
   font-size: 100%;
+  margin: 0px 0px 1.5em;
+  padding-left: 2em;
+  padding-right: 2em;
+  line-height: 22px;
 }
 
-nav ul {
-  list-style-type: none;
+footer p {
+  color: rgb(38, 38, 38);
 }
 
 a:link {
   text-decoration: none;
   color: rgb(156, 44, 22);
   margin: 0px;
-  padding: 5px;
 }
 
 a:visited {
@@ -83,6 +77,47 @@ a:visited {
 a:hover {
   text-decoration: underline;
 }
+
+footer a:link {
+  color: rgb(68, 68, 68);
+  text-decoration: underline;
+}
+
+footer a:hover, footer a:active {
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
+}
+
+footer a:visited {
+  color: rgb(68, 68, 68);
+}
+
+/* Lists */
+
+ul, ol {
+  margin: 0px 1.5em 1.5em 0;
+  padding-left: 3em;
+  padding-right: 2em;
+  color: rgb(34, 34, 34);
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  margin-left: 1.5em;
+}
+
+nav li {
+  margin: 0.5em 0 0.5em;
+  padding-left: 0em;
+  padding-right: 0em;
+  color: rgb(34, 34, 34);
+  font-size: 100%;
+}
+
+/** Header **/
 
 #main {
   background: url(/bg_header.png) no-repeat center top;
@@ -103,6 +138,20 @@ a:hover {
   width: 441px;
   height: 101px;
 }
+
+/** Navigation **/
+
+nav {
+  padding: 0.75em;
+  -webkit-border-radius: 1.5em 1.5em 1.5em 1.5em;
+  -moz-border-radius: 1.5em 1.5em 1.5em 1.5em;
+  border-radius: 1.5em 1.5em 1.5em 1.5em;
+  background: rgb(191, 191, 115);
+  float: right;
+  margin: 1.5em 3em 1.5em 1.5em;
+}
+
+/** Footer **/
 
 aside {
   width: 984px;
@@ -132,23 +181,13 @@ aside {
   margin: 0 auto;
   padding: 0px;
   font-size: 88%;
-  color: rgb(68, 68, 68);
+  color: rgb(38, 38, 38);
   background: url(above_footer_bg.png);
 }
 
 footer {
   font-size: 88%;
-  color: rgb(68, 68, 68);
   text-align: center;
   padding-top: 1em;
-}
-
-footer a {
-  color: rgb(68, 68, 68);
-  text-decoration: underline;
-}
-
-footer a:hover, footer a:focus, footer a:active {
-  color: rgb(0, 0, 0);
-  text-decoration: underline;
+  background: rgb(144, 96, 24) !important;
 }
